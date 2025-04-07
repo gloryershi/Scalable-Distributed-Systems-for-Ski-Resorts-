@@ -108,7 +108,6 @@ public class SkierRidePost {
                 for (int i = 0; i < TOTAL_REQUESTS; i++) {
                     SkierRide ride = SkierRide.GenerateRandomSkierRide();
                     String requestJson = new Gson().toJson(ride);
-//                    System.out.println("📤 Sending request: " + requestJson);
                     requestQueue.put(requestJson);
                 }
                 System.out.println("All lift ride generated!");
